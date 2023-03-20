@@ -1,17 +1,18 @@
 #include <iostream>
-#include <ctype.h>
-#include <stdexcept>
-#include <windows.h>
-#include <chrono>
-#include <thread>
-#include <ctime>
+#include <ctype.h>    //untuk menggunakan fungsi isdigit()
+#include <stdexcept>  //validasi
+#include <windows.h>  //untuk system(cls)
+#include <chrono>     //untuk time
+#include <thread>     //untuk jumlah maksimal salah login
+#include <ctime>      //untuk sleep selama 15 detik
 
 using namespace std;
-    int menu;			
+    int menu;
+    int i;			
     char ulangi;                  //looping
     string pass, user;
-    string username ="user";    //username
-    string password = "pass";   //password
+    string username ="user";      //username
+    string password = "pass";     //password
     string login = "block";       //pembatasan jumlah kesalahan login
     string nm;                    //str nama
     string input;                 //str untuk validasi input menu dengan stoi()
@@ -56,7 +57,7 @@ do{
     cout << "Masukkan angka menu (1-3): ";
     cin >> input;
 
-        // Validasi input
+        //validasi input menu
         bool valid = true;
         for (char c : input) {
             if (!isdigit(c)) {
@@ -87,16 +88,16 @@ do{
                     cin>>ulangi;
                     break;
                 default:
-                    cout << "Input menu salah, menu: " << endl;
+                    cout<<"Input menu salah, menu: "<<endl;
                     cout<<"Kembali ke menu awal? (y/t): ";
                     cin>>ulangi;
                     continue;
             }
         }
 		else {
-            cout << "Input menu salah, menu: " << endl;
+            cout<<"Input menu salah, menu: "<<endl;
             cout<<"Kembali ke menu awal? (y/t): ";
-                    cin>>ulangi;
+            cin>>ulangi;
             continue;
         }
     
