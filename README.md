@@ -8,7 +8,7 @@ Aplikasi celengan sederhana dengan C++
 
 </div>
 
-<br>Aplikasi celengan yang diberi nama Celengin adalah suatu software dengan program C++ untuk menunjang tugas besar dari mata kuliah Struktur Data program studi Rekayasa Perangkat Lunak UPI.
+<br>Aplikasi celengan yang diberi nama Celengin adalah suatu software dengan program C++ untuk menunjang tugas besar dari mata kuliah Struktur Data dan Algoritma yang di ampu oleh Ibu Dian Anggraini, S. ST., M. T. program studi Rekayasa Perangkat Lunak UPI.
 
 Happy Coding! 😊
 
